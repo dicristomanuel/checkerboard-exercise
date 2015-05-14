@@ -1,32 +1,26 @@
-// Your JS goes here
+// function gradient() {
 
-var win = new Audio(['http://www.freshly-ground.com/misc/music/20060826%20-%20Armstrong.mp3']);
-	win.play();
+// 	for (var i=0; i < 99; i++) {
+// 		var tile = document.createElement("div");
+// 		var body = document.querySelector("body");
+// 		body.appendChild(tile);
+// 		tile.style.width = "11.1%";
+// 		tile.style.float = "left";
+// 		tile.style.paddingBottom = "11.1%";
 
+// 			if(i%2 === 0) {
+// 				tile.style.background = "skyblue";
+// 			} else {
+// 				tile.style.background = "hotpink";
+// 			} //if statement
 
-var colorSelector = function () {
-    var chars = "0123456789ABCDEF".split('');
-    var start = "#";
-    for (var q = 0 ; q < 6 ; q++) {
-        start += chars[Math.floor(Math.random() * 16)];
-    }
-    return start;
-};
+// 	} //for loop
+// } //gradient
 
-function randomColor() {
-	for (var i=0; i < 99; i++) {
-		var tile = document.createElement("div");
-		var body = document.querySelector("body");
-			body.appendChild(tile);
-			tile.style.width = "11.1%";
-			tile.style.float = "left";
-			tile.style.paddingBottom = "11.1%";
-			
-			tile.style.background = colorSelector();
-	} //for loop
-} //randomColor
+//gradient();
 
-randomColor();
-
-
-
+alert("Couldn't solve this one, sorry!");
+var body = document.querySelector("body");
+var img = document.createElement("img");
+(body).appendChild(img);
+img.setAttribute("src", "http://www.clipartbest.com/cliparts/ncX/x9d/ncXx9dBcB.png")
